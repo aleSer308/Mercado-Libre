@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main class="register">
+        <form action="POST">
+            
+            <div class="form-group">
+                <label for="name">Nombre y Apellido</label>
+                <input type="text" placeholder="Eemplo: Edit Piaf" required>
+            </div>
+            <div class="form-group">
+                <label for="usuario">Nombre de Usuari@</label>
+                <input type="text" placeholder="Eemplo: La Môme Piaf" required>
+            </div>
+            <div class="from-group">
+                <label for="date-of-birthday">Fecha de Nacimiento</label>
+                <input type="date" name="fecha" value="2022-10-25" min="1953-01-01" max="2004-05-30">
+            </div>
+            <div>
+                <label for="home-address">Domicilio</label>
+                <input type="domicilio" placeholder="Ejemplo: Marcelle Dupont 1234">
+            </div>
+            <div>
+                <label for="compra-o-venta">Desea comprar o vender?</label>
+                <input type="radio" name="compra-o-venta" value="comprar">
+                <input type="radio" name="compra-o-venta" value="vender">
+                <input type="radio" name="compra-o-venta" value="ambas">
+            </div>
+            <div>
+                <label for="categorias">categorias</label>
+                <select name="categorias" id=""></select>
+
+            </div>
+            <div class="form-group">
+                <label for="color">color favorito</label>
+                <select name="color">
+                    <option value="">selecciona el color</option>
+                    <option value="rojo">Rojo</option>
+                    <option value="rojo">azul</option>
+                    <option value="rojo">Violeta</option>
+                    <option value="rojo">Azul</option>            
+                </select>
+            </div>
+
+            <div class="from-group">
+                <label for="color">Acepto terminos Y condiciones</label>
+                <input type="checkbox" value="1" name="terms">
+            </div>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </main>
+
+
+
+</body>
+</html>
