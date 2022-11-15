@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.register{
+    margin-top: 1%;
+    padding: 0.5rem;
+    border-radius: 6%;
+    border-style: solid;
+    border-color: #0d20ef;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    
+}
+
+.input-date {
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-around;
+}
+
+.input-group{
+    padding: 0.9rem;
+}
+
+.input {
+    border: solid 1.5px #0d20ef;
+    border-radius: 1rem;
+    background: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #0d20ef;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .user-label {
+    position: absolute;
+    left: 15px;
+    color: #2433c1;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .input:focus, input:valid {
+    outline: none;
+    border: 1.5px solid #1a73e8;
+   }
+   
+   .input:focus ~ label, input:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #ebebeb;
+    padding: 0.7em;
+    color:  #2433c1;
+   }
+
+.choose{
+    padding: 0.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.choose-it{
+    display: flex;
+    flex-direction: row;
+    font-size: none;
+    transform: none;
+}
+.form-group{
+    font-size:0.8rem ;
+    color: #1a73e8;
+
+}
+button {
+    font-family: inherit;
+    font-size: 1.5rem;
+    background: royalblue;
+    color: white;
+    padding: 0.45rem 0.30rem;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
